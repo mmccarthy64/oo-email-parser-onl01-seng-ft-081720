@@ -14,7 +14,6 @@ class EmailAddressParser
     splitemails = emails.split.collect {|address| address.split(",")}
     returnemails = splitemails.flatten.uniq
     returnemails
-    end
   end
   
   
