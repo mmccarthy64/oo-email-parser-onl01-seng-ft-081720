@@ -7,6 +7,8 @@ class EmailAddressParser
   attr_accessor :emails, :name
   
   def initialize(name, emails)
+    @emails = emails
+  end
   
   def parse
     emails.split.collect do |address|
